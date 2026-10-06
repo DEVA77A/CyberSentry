@@ -1,0 +1,20 @@
+topics:
+  - name: sec.raw
+    partitions: 3
+    replication_factor: 1
+    retention_ms: 604800000
+
+  - name: sec.normalized
+    partitions: 3
+    replication_factor: 1
+    retention_ms: 604800000
+
+  - name: sec.detections
+    partitions: 3
+    replication_factor: 1
+    retention_ms: 604800000
+
+  - name: sec.dlq
+    partitions: 1
+    replication_factor: 1
+    retention_ms: 604800000
