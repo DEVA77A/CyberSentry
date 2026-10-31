@@ -1,3 +1,7 @@
+ifeq ($(OS),Windows_NT)
+SHELL := C:/PROGRA~1/Git/bin/bash.exe
+endif
+
 .PHONY: up down logs ps db-init seed verify test lint clean reset data
 
 COMPOSE = docker compose -p cybersentry
